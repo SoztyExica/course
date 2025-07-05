@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>个人主页 - 资源分享平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
+</head>
+<body onload="setPageBg('profile')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <section class="profile-header">
+      <img src="img/default-avatar.png" alt="用户头像" class="avatar-large" id="profileAvatar">
+      <form id="avatarForm" enctype="multipart/form-data">
+        <input type="file" id="avatarInput" accept="image/*">
+        <button type="submit" class="upload-btn">上传头像</button>
+      </form>
+      <h2 id="profileUsername">用户A</h2>
+      <p id="profileGender">性别：男</p>
+      <p id="profileIntro">个人简介：热爱分享，乐于助人。</p>
+    </section>
+    <section>
+      <h3>发布过的帖子</h3>
+      <ul class="post-list">
+        <li>
+          <a href="post_detail_1.html">
+            <img src="img/sample.jpg" alt="帖子缩略图">
+            <h4>图片分享帖</h4>
+          </a>
+        </li>
+        <!-- 其它帖子 -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>登录 - 资源分享平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</head>
+<body onload="setPageBg('login')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <div class="form-container">
+      <form id="loginForm">
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" required>
+        <label class="checkbox-label">
+          <input type="checkbox" name="remember"> 记住密码
+        </label>
+        <button type="submit">登录</button>
+        <p>还没有账号？<a href="register.html">注册</a></p>
+      </form>
+      <div id="loginError" class="error"></div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html>

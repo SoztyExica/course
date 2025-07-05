@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>分享一帖 - 资源分享平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body onload="setPageBg('post')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <article>
+      <h1>分享一帖</h1>
+      <div>
+        <span>作者：<a href="profile.html"><img src="img/default-avatar.png" alt="用户头像" class="avatar">用户A</a></span>
+        <time datetime="2024-06-01">2024-06-01</time>
+      </div>
+      <div class="post-content">
+        <p>这是一张很有趣的图片，欢迎大家欣赏！</p>
+        <img src="img/9.png" alt="分享图片">
+        <!-- ↑↑↑ 这里填写你的图片地址 ↑↑↑ -->
+        <p>更多精彩内容请关注本版区。</p>
+      </div>
+      <audio controls>
+        <source src="audio/sample.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+      </audio>
+    </article>
+    <aside>
+      <h3>相关推荐</h3>
+      <ul>
+        <li><a href="post_detail_1.html">帖子1</a></li>
+        <li><a href="post_detail_3.html">帖子3</a></li>
+        <li><a href="post_detail_4.html">帖子4</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html> 
