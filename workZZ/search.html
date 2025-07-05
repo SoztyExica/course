@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>搜索 - 资源分享平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</head>
+<body onload="setPageBg('search')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form id="searchForm">
+      <input type="text" id="searchInput" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <h2 id="searchTitle">搜索结果</h2>
+    <ul id="searchResults" class="post-list">
+      <!-- 搜索结果动态插入 -->
+    </ul>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>资源分享平台-首页</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body onload="setPageBg('index')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <section class="banner">
+      <h2>欢迎来到资源分享平台</h2>
+      <p>在这里你可以发现、分享各类优质资源</p>
+      <!-- banner背景图片用body背景实现 -->
+    </section>
+    <section>
+      <h2>网站简介</h2>
+      <p>本平台致力于为用户提供一个安全、便捷的资源分享环境，支持多种资源类型的发布与交流。</p>
+    </section>
+    <section>
+      <h2>特色内容</h2>
+      <ul>
+        <li>多版区资源分类</li>
+        <li>支持图片、GIF、文字混合发帖</li>
+      </ul>
+    </section>
+    <section class="zones-container">
+      <h2>版区</h2>
+      <div class="zones-list">
+        <a href="zone1.html" class="zone-box">
+          <span class="zone-title"></span>
+          <span class="zone-desc">图片资源分享</span>
+        </a>
+        <a href="zone2.html" class="zone-box zone2">
+          <span class="zone-title"></span>
+          <span class="zone-desc">小说资源分享</span>
+        </a>
+        <a href="zone3.html" class="zone-box zone3">
+          <span class="zone-title"></span>
+          <span class="zone-desc">文档教程专区</span>
+        </a>
+        <a href="zone4.html" class="zone-box zone4">
+          <span class="zone-title"></span>
+          <span class="zone-desc">技术交流专区</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html>

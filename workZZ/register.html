@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>注册 - 资源分享平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+</head>
+<body onload="setPageBg('register')">
+  <header>
+    <a href="index.html" class="logo-link">首页</a>
+    <div class="user-menu">
+      <div class="user-profile-dropdown">
+        <img src="img/7.png" alt="用户头像" class="user-avatar" id="userAvatar">
+        <a href="profile.html" class="profile-link">个人主页</a>
+        <div class="dropdown-box" id="dropdownBox">
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="请输入搜索内容" required>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+  <main>
+    <div class="form-container">
+      <form id="registerForm">
+        <h2>用户注册</h2>
+        <label for="regUsername">用户名：</label>
+        <input type="text" id="regUsername" name="username" required minlength="3" maxlength="10" placeholder="请输入3-10位用户名">
+        <label for="regEmail">邮箱：</label>
+        <input type="email" id="regEmail" name="email" required placeholder="请输入邮箱地址">
+        <label for="regPhone">手机号：</label>
+        <input type="tel" id="regPhone" name="phone" required pattern="^\d{11}$" placeholder="请输入11位手机号">
+        <label for="regPassword">密码：</label>
+        <input type="password" id="regPassword" name="password" required minlength="8" maxlength="20" placeholder="请输入8-20位密码">
+        <label for="regConfirmPassword">确认密码：</label>
+        <input type="password" id="regConfirmPassword" name="confirmPassword" required placeholder="请再次输入密码">
+        <label>性别：</label>
+        <label class="radio-label"><input type="radio" name="gender" value="male" required> 男</label>
+        <label class="radio-label"><input type="radio" name="gender" value="female" required> 女</label>
+        <label>兴趣：</label>
+        <label class="checkbox-label"><input type="checkbox" name="hobby" value="coding"> 编程</label>
+        <label class="checkbox-label"><input type="checkbox" name="hobby" value="reading"> 阅读</label>
+        <label class="checkbox-label"><input type="checkbox" name="hobby" value="sports"> 运动</label>
+        <label for="region">所属地区：</label>
+        <select id="region" name="region" required>
+          <option value="">请选择地区</option>
+          <option value="beijing">北京</option>
+          <option value="tianjin">天津</option>
+          <option value="hebei">河北</option>
+          <option value="shanxi">山西</option>
+          <option value="neimenggu">内蒙古</option>
+          <option value="liaoning">辽宁</option>
+          <option value="jilin">吉林</option>
+          <option value="heilongjiang">黑龙江</option>
+          <option value="shanghai">上海</option>
+          <option value="jiangsu">江苏</option>
+          <option value="zhejiang">浙江</option>
+          <option value="anhui">安徽</option>
+          <option value="fujian">福建</option>
+          <option value="jiangxi">江西</option>
+          <option value="shandong">山东</option>
+          <option value="henan">河南</option>
+          <option value="hubei">湖北</option>
+          <option value="hunan">湖南</option>
+          <option value="guangdong">广东</option>
+          <option value="guangxi">广西</option>
+          <option value="hainan">海南</option>
+          <option value="chongqing">重庆</option>
+          <option value="sichuan">四川</option>
+          <option value="guizhou">贵州</option>
+          <option value="yunnan">云南</option>
+          <option value="xizang">西藏</option>
+          <option value="shaanxi">陕西</option>
+          <option value="gansu">甘肃</option>
+          <option value="qinghai">青海</option>
+          <option value="ningxia">宁夏</option>
+          <option value="xinjiang">新疆</option>
+          <option value="taiwan">台湾</option>
+          <option value="xianggang">香港</option>
+          <option value="aomen">澳门</option>
+        </select>
+        <label for="intro">个人简介：</label>
+        <textarea id="intro" name="intro" placeholder="请输入个人简介（可选）"></textarea>
+        <button type="submit">立即注册</button>
+        <p>已有账号？<a href="login.html">立即登录</a></p>
+      </form>
+      <div id="registerError" class="error"></div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 个人资源分享平台 | 联系方式：1668375493@qq.com</p>
+  </footer>
+</body>
+</html>
